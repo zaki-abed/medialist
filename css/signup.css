@@ -1,14 +1,11 @@
 /* import File Master.css */
 @import url("master.css");
 /* Start logo */
-.main-page .content {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .main-page .content .logo {
     width: 115px;
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 /* End Logo */
 /*  */
@@ -23,13 +20,8 @@
 .form h3 {
     font-family: "Aref Ruqaa Ink", sans-serif;
     font-size: 24px;
-    margin-bottom: 0;
-}
-
-.form p {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 40px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .form form {
@@ -37,15 +29,58 @@
     flex-direction: column;
 }
 
+.form form input[type=text],
+.form form input[type=email] {
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #737373;
+    margin-bottom: 10px;
+}
+
+.form form input[type=text]::placeholder,
+.form form input[type=email]::placeholder {
+    font-size: 14px;
+}
+
+.form form .radio-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form form .radio-box p {
+    color: #737373;
+    margin: 15px 0;
+}
+
+.form form .radio-box div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form form .radio-box div:nth-of-type(2),
+.form form .radio-box div:nth-of-type(3) {
+    margin-bottom: 20px;
+}
+
+.form form .radio-box div:nth-of-type(3) label {
+    margin-right: 3px;
+}
+.form form .radio-box div span {
+    margin-top: -2px;
+    font-size: 15px;
+}
 /* Create a custom radio button */
-.container {
+.box-container {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
     user-select: none;
 }
 
-.container input {
+.box-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -57,16 +92,12 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
     border-radius: 50%;
+    border: 2px solid #737373;
 }
 
-.container:hover input ~ .checkmark {
+.box-container:hover input ~ .checkmark {
     background-color: #ccc;
-}
-
-.container input:checked ~ .checkmark {
-    background-color: var(--secondary-background);
 }
 
 .checkmark:after {
@@ -75,36 +106,41 @@
     display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.box-container input:checked ~ .checkmark:after {
     display: block;
 }
 
-.container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+.box-container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background: white;
+    background: var(--secondary-background);
 }
 
 .form form input[type=submit] {
-    width: fit-content;
     text-align: center;
     margin: 0 auto 20px;
     padding: 15px 55px;
-    background-color: transparent;
+    background-color: var(--secondary-background);
     border: 1px solid var(--secondary-background);
-    border-radius: 15px;
-    color: var(--secondary-background);
-    font-weight: 700;
+    border-radius: 0px 15px 0px 15px;
+    color: white;
     font-size: 18px;
+    width: 100%;
 }
 
-.form a:not(.sign-up),
-.form p:nth-of-type(2) {
-    font-size: 15px;
+.form p.sign-up {
     color: var(--secondary-background);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.form a:not(.sign-up) {
+    font-size: 15px;
+    color: #737373;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -123,18 +159,20 @@
     color: #737373;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .row-2 .social {
     display: flex;
+    justify-content: center;
 }
 
 .row-2 .social i {
-    font-size: 25px;
+    font-size: 20px;
     border: 1px solid var(--secondary-background);
-    width: 50px;
+    width: 40px;
     border-radius: 50%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,4 +181,5 @@
 .row-2 .social i:nth-of-type(1) {
     margin-right: 10px;
 }
+
 /*  */
