@@ -1,0 +1,122 @@
+/* import File Master.css */
+@import url("master.css");
+/* Start logo */
+.main-page .content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page .content .logo {
+    width: 115px;
+    max-width: 100%;
+}
+/* End Logo */
+/* Start form */
+.form {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h3 {
+    font-family: "Aref Ruqaa Ink", sans-serif;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.form p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input[type=email],
+.form form input[type=password] {
+    outline: none;
+    border: 1px solid #B0B0B0;
+    border-radius: 15px;
+    padding: 22px 15px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.form form .password {
+    position: relative;
+}
+
+.form form .password::after {
+    content: '\f06e';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.form form input[type=password] {
+    margin: 25px 0;
+    width: 100%;
+}
+
+.form form input[type=submit] {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 15px 55px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-background);
+    border-radius: 15px;
+    color: var(--secondary-background);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form a:not(.sign-up),
+.form p:nth-of-type(2) {
+    font-size: 15px;
+    color: var(--secondary-background);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.form p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.form .sign-up  {
+    font-size: 15px;
+    font-weight: 700;
+    color: #737373;
+}
+
+.row-2 p {
+    color: #737373;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row-2 .social {
+    display: flex;
+}
+
+.row-2 .social i {
+    font-size: 25px;
+    border: 1px solid var(--secondary-background);
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-2 .social i:nth-of-type(1) {
+    margin-right: 10px;
+}
+/* End Form */

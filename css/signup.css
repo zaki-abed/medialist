@@ -1,0 +1,146 @@
+/* import File Master.css */
+@import url("master.css");
+/* Start logo */
+.main-page .content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page .content .logo {
+    width: 115px;
+    max-width: 100%;
+}
+/* End Logo */
+/*  */
+.form {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h3 {
+    font-family: "Aref Ruqaa Ink", sans-serif;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.form p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Create a custom radio button */
+.container {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: var(--secondary-background);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.form form input[type=submit] {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 15px 55px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-background);
+    border-radius: 15px;
+    color: var(--secondary-background);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form a:not(.sign-up),
+.form p:nth-of-type(2) {
+    font-size: 15px;
+    color: var(--secondary-background);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.form p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.form .sign-up  {
+    font-size: 15px;
+    font-weight: 700;
+    color: #737373;
+}
+
+.row-2 p {
+    color: #737373;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row-2 .social {
+    display: flex;
+}
+
+.row-2 .social i {
+    font-size: 25px;
+    border: 1px solid var(--secondary-background);
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-2 .social i:nth-of-type(1) {
+    margin-right: 10px;
+}
+/*  */
