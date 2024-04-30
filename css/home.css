@@ -1,10 +1,6 @@
 /* import File Master.css */
 @import url("master.css");
 /* Override master.css */
-body {
-    height: auto;
-}
-
 .main-page {
     height: auto;
 }

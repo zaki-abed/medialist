@@ -1,20 +1,89 @@
 /* import File Master.css */
 @import url("master.css");
-/* Start logo */
-.main-page .content {
-    justify-content: space-between;
+
+.main-page {
+    overflow: hidden;
+}
+
+.main-page .content{
+    position: relative;
+}
+
+.main-page .content .fill-background {
+    left: 47%;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    background: var(--secondary-background);
+    position: absolute;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    transform: scale(0);
+    animation-timing-function: linear;
+    animation-name: fill-background;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    margin: 0 auto;
+}
+
+@keyframes fill-background {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(2000);
+    }
+    100% {
+        top: 150px;
+        transform: scale(0);
+    }
 }
 
 .main-page .content .logo {
-    width: 115px;
-    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    top: 30%;
+    display: block;
+    margin: 0 auto;
+    animation-name: move-logo;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
-/* End Logo */
+
+@keyframes move-logo {
+    0% {
+        top: 30%;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.main-page .name {
+    position: relative;
+    z-index: 1;
+}
 /* Start form */
 .login {
-    visibility: hidden;
+    opacity: 0;
+    animation-name: fadein-login;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fadein-login {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .form {
     text-align: center;
     flex: 1;
@@ -41,7 +110,8 @@
 }
 
 .form form input[type=email],
-.form form input[type=password] {
+.form form input[type=password],
+.form form input[type=text] {
     outline: none;
     border: 1px solid #B0B0B0;
     border-radius: 15px;
@@ -53,16 +123,14 @@
     position: relative;
 }
 
-.form form .password::after {
-    content: '\f06e';
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
+.form form .password i {
     position: absolute;
-    top: 45px;
-    right: 20px;
+    top: 50px;
+    right: 15px;
+    cursor: pointer;
 }
-
-.form form input[type=password] {
+.form form input[type=password],
+.form form input[type=text] {
     margin: 25px 0;
     width: 100%;
 }
@@ -78,6 +146,7 @@
     color: var(--secondary-background);
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .form a:not(.sign-up),
@@ -118,6 +187,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .row-2 .social i:nth-of-type(1) {
