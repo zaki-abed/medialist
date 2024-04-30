@@ -1,0 +1,237 @@
+/* import File Master.css */
+@import url("master.css");
+/* Override master.css */
+body {
+    height: auto;
+}
+
+.main-page {
+    height: auto;
+}
+/* Row 1 */
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-1 p.profile-name {
+    color: #0D0140;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.row-1 .setting {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.row-1 .setting i {
+    background-color: var(--secondary-background);
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.row-1 .setting img {
+    width: 36px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Row 2 */
+.row-2 {
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.row-2 p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.row-2 a {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background-color: #737373;
+    padding: 10px;
+    border-radius: 6px;
+    display: block;
+    width: fit-content;
+}
+
+.row-2 img {
+    display: block;
+    width: 210px;
+    max-width: 100%;
+    position: absolute;
+    top: -31px;
+    right: -46px;
+}
+
+/* Row 3 */
+.row-3 .title,
+.row-4 .title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin: 17px 0px;
+}
+
+.row-3 .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 90px);
+    gap: 10px;
+}
+
+.row-3 .grid-container div {
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row-3 .grid-container .one {
+    grid-area: 1 / 2 / 3 / 1;
+    background-color: #AFECFE;
+}
+
+.row-3 div img {
+    width: 34px;
+}
+
+.row-3 .grid-container .two {
+   background-color: #D13F4180;
+}
+
+.row-3 .grid-container .three {
+    background-color: #FFD6AD;
+}
+
+.row-3 .grid-container div p {
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: #0D0140;
+    margin: 0;
+}
+
+.row-3 .grid-container div p span {
+    display: block;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Row 4 */
+.row-4 .box {
+    display: flex;
+    flex-direction: column;
+    background: #fbf9f9;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.row-4 .box .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-4 .box .row-1 i.fa-apple{
+    background: #D6CDFE;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-4 .box .row-1 div {
+    flex: 1;
+    margin-left: 15px;
+    color: #150B3D;
+}
+
+.row-4 .box .row-1 div h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #524B6B;
+}
+
+.row-4 .box .row-1 div p {
+    font-size: 14px;    
+    margin: 10px 0 0;
+}
+
+.row-4 .box .row-1 i.fa-bookmark{
+    color: #524B6B;
+}
+
+.row-4 .box .price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #232D3A;
+}
+
+.row-4 .box .price span {
+    font-weight: normal;
+    font-size: 12px;
+    color: #232d3a63;
+}
+
+.row-4 .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-4 .details a {
+    display: block;
+    background-color: #cbc9d442;
+    font-family: Source Sans Pro, sans-serif;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #524B6B;
+}
+
+.row-4 .details a.apply {
+    background-color: #ffb6b63b;
+}
+
+/* Nav */
+.nav {
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+}
+
+.nav i {
+    color: #A49EB5;
+}
+
+.nav i.active {
+    color: white;
+    background: var(--secondary-background);
+    padding: 10px;
+    border-radius: 50%;
+}
