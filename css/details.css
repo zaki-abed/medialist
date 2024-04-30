@@ -1,0 +1,157 @@
+/* import File Master.css */
+@import url("master.css");
+/* Override master.css */
+body {
+    height: auto;
+}
+
+.main-page {
+    height: auto;
+    margin-top: 15px;
+    position: relative;
+}
+
+/*  */
+.main-page .logo {
+    width: 85px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.main-page .head {
+    position: absolute;
+    width: 100%;
+    background-color: #F3F2F2;
+    top: 108px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 50px;
+    color: #0D0140;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.main-page .head .details-co {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.main-page .head .details-co::after,
+.main-page .head .details-co::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #0D0140;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.main-page .head .details-co::after {
+    left: 120px;
+}
+
+.main-page .head .details-co::before {
+    right: 136px;
+}
+
+.main-page .head .details-co span {
+    font-weight: 400;
+}
+
+.main-page .content .body {
+    margin-top: 120px;
+}
+
+.main-page .content .body p.title {
+    font-family: Source Sans Pro, sans-serif;
+    color: #150b3d;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main-page .content .body span,
+.main-page .content .body ul li {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 12px;
+    color: #524B6B;
+    line-height: 1.5;
+    display: block;
+}
+
+.main-page .content .body ul {
+    margin-bottom: 30px;
+}
+
+.main-page .content .body ul li {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.main-page .content .body ul li::after {
+    content: "";
+    background-color: #524B6B;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: -10px;
+    top: 7px;
+    border-radius: 50%;
+}
+
+.main-page .content .body .read-more {
+    background: #ffb6b63b;
+    color: #0D0140;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+.main-page .content .body .location-span {
+    margin-bottom: 20px;
+}
+
+.main-page .content .body .info {
+    color: #150B3D;
+}
+
+.main-page .content .body .info h3 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-page .content .body .info p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.main-page .content .body .info hr {
+    border: 0.5px solid #DEE1E7;
+    margin: 20px 0;
+}
+
+.main-page .content .body ul:last-of-type {
+    margin-top: 20px;
+}
+
+.main-page .content input[type="submit"] {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background: var(--secondary-background);
+    border: none;
+    color: white;
+    padding: 13px 0;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
