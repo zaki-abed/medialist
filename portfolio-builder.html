@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medialist</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/portfolio-builder.css">
+</head>
+<body>
+    <div class="main-page">
+        <img class="status-bar" src="images/status-bar.svg" alt="Status Bar">
+        <div class="content">
+            <!-- Header -->
+            <div class="header">
+                <p>Portfolio Builder</p>
+                <img src="images/logo-white.svg" alt="Logo">
+            </div>
+
+            <!-- Tab 1 -->
+            <div class="tab-1" id="tab-1">
+                <div class="profile-images">
+                    <p class="title">Portfolio images</p>
+                    <div class="background-gray">
+                        <div class="row-1">
+                            <div>
+                                <img src="images/porfile-1.png" alt="Image Profile 1">
+                                <i class="fas fa-plus"></i>
+                                <p>Head View</p>
+                            </div>
+                            <div>
+                                <img src="images/profile-2.png" alt="Image Profile 2">
+                                <i class="fas fa-plus"></i>
+                                <p>Profile View</p>
+                            </div>
+                            <div>
+                                <img src="images/profile-3.png" alt="Image Profile 3">
+                                <i class="fas fa-plus"></i>
+                                <p>Full View</p>
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <button>Add Photo</button>
+                            <p>View All</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-basic-details">
+                    <p>Basic Details</p>
+                    <form action="#">
+                        <input type="number" placeholder="Height">
+                        <input type="number" placeholder="Weight">
+                        <input type="date" placeholder="Date Of Birth">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-2" id="tab-2">
+                <p class="title">Basic Details</p>
+                <div>
+                    <p>Do you have password?</p>
+                    <div class="radio-content">
+                        <label class=" box-container"><span>Yes</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class=" box-container"><span>No</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <p>Do you have an experience ?if you have mention how much?</p>
+                    <div class="radio-content">
+                        <label class=" box-container"><span>Yes</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class=" box-container"><span>No</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <input type="text" placeholder="How many">
+                <div>
+                    <p>Do you have password?</p>
+                    <div class="radio-content">
+                        <label class=" box-container"><span>Single</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class=" box-container"><span>Engaged</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class=" box-container"><span>Married</span>
+                            <input type="radio" name="age" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <label for="cv">Your CV</label>
+                    <input id="cv" type="file">
+                </div> 
+            </div>
+
+            <!-- Footer -->
+            <div class="paginate">
+                <span class="active" id="paginate1">1</span>
+                <i class="fas fa-arrow-right"></i>
+                <span id="paginate2">2</span>
+            </div>
+            <button class="next" id="toggleButton">Next</button>
+            <input type="submit" class="submit" value="Submit" id="submit">
+        </div>
+    </div>
+    <script>
+        const tab1 = document.getElementById('tab-1');
+        const tab2 = document.getElementById('tab-2');
+        const toggleButton = document.getElementById('toggleButton');
+        const submit = document.getElementById('submit');
+        const paginate1 = document.getElementById('paginate1');
+        const paginate2 = document.getElementById('paginate2');
+
+        toggleButton.addEventListener('click', function() {
+            if (tab1.style.display !== 'none') {
+                tab1.style.display = 'none';
+                tab2.style.display = 'block'; 
+                toggleButton.style.display = 'none'; 
+                submit.style.display = 'block';
+            } else {
+                tab1.style.display = 'block';
+                tab2.style.display = 'none';
+            }
+        });
+
+        paginate1.addEventListener('click', function() {
+            tab1.style.display = 'block'; 
+            toggleButton.style.display = 'block';
+            tab2.style.display = 'none'; 
+            submit.style.display = 'none';                      
+            paginate1.classList.add("active");
+            paginate2.classList.remove("active");
+        });
+
+        paginate2.addEventListener('click', function() {
+            tab2.style.display = 'block'; 
+            submit.style.display = 'block';
+            tab1.style.display = 'none'; 
+            toggleButton.style.display = 'none';
+            paginate1.classList.remove("active");
+            paginate2.classList.add("active");
+
+        });
+    </script>
+</body>
+</html>
