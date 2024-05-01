@@ -225,9 +225,13 @@
     color: #A49EB5;
 }
 
-.nav i.active {
+.nav i.home {
     color: white;
     background: var(--secondary-background);
     padding: 10px;
     border-radius: 50%;
+}
+
+.nav i.active {
+    color: var(--secondary-background);
 }

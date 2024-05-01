@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medialist</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/jobs.css">
+    <style>
+        /* Nav */
+        .nav {
+            margin-bottom: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            box-shadow: 0px 4px 4px 0px #00000040 inset;
+            position: relative;
+            border: 1px solid #eee;
+        }
+
+        .nav i {
+            color: #A49EB5;
+        }
+
+        .nav i.home {
+            color: white;
+            background: var(--secondary-background);
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .nav i.active {
+            color: var(--secondary-background);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-page">
+        <div class="content">
+            <div>
+                <!-- Search -->
+                <div class="search">
+                    <i class="fas fa-arrow-left arrow"></i>
+                    <form action="#">
+                        <div>
+                            <input type="text" placeholder="Design">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="California, USA">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </form>
+                </div>
+                <!-- Keywords -->
+                <div class="keywords">
+                    <img src="images/filter-icon.svg" alt="Filter Icon">
+                    <div class="keyword">
+                        <span>Senior designer</span>
+                        <span>Designer</span>
+                        <span>Full-time</span>
+                    </div>
+                </div>
+                <!-- Jobs -->
+                <div class="overflow-jobs">
+                    <div class="jobs">
+                        <!-- Job -->
+                        <div class="job">
+                            <div class="row-1">
+                                <img src="images/google-logo.svg" alt="Logo">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <div class="row-2">
+                                <p>UI/UX Designer</p>
+                                <span>Google inc . California, USA</span>
+                            </div>
+                            <div class="keywords">
+                                <span>Senior designer</span>
+                                <span>Designer</span>
+                                <span>Full-time</span>
+                            </div>
+                            <div>
+                                <span>25 minute ago</span>
+                                <p>$15K <span>/Mo</span></p>
+                            </div>
+                        </div>
+                        <!-- Job -->
+                        <div class="job">
+                            <div class="row-1">
+                                <img src="images/google-logo.svg" alt="Logo">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <div class="row-2">
+                                <p>UI/UX Designer</p>
+                                <span>Google inc . California, USA</span>
+                            </div>
+                            <div class="keywords">
+                                <span>Senior designer</span>
+                                <span>Designer</span>
+                                <span>Full-time</span>
+                            </div>
+                            <div class="row-3">
+                                <span>25 minute ago</span>
+                                <p>$15K <span>/Mo</span></p>
+                            </div>
+                        </div>
+                        <!-- Job -->
+                        <div class="job">
+                            <div class="row-1">
+                                <img src="images/google-logo.svg" alt="Logo">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <div class="row-2">
+                                <p>UI/UX Designer</p>
+                                <span>Google inc . California, USA</span>
+                            </div>
+                            <div class="keywords">
+                                <span>Senior designer</span>
+                                <span>Designer</span>
+                                <span>Full-time</span>
+                            </div>
+                            <div class="row-3">
+                                <span>25 minute ago</span>
+                                <p>$15K <span>/Mo</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a href="#"><i class="fas fa-shopping-bag active"></i></a>
+                    <a href="#"><i class="fas fa-vector-square"></i></a>
+                    <a href="home.html"><i class="fas fa-home home"></i></a>
+                    <a href="#"><i class="far fa-comment-alt"></i></a>
+                    <a href="jobs.html"><i class="far fa-bookmark"></i></a>
+                </div>
+            </div>
+        </div><!-- / content -->
+    </div> <!-- / main page -->
+</body>
+</html>

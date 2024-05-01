@@ -1,0 +1,175 @@
+/* import File Master.css */
+@import url("master.css");
+.main-page .content {
+    width: 90%;
+}
+
+/* Start Search */
+.search {
+    width: 110%;
+    margin-left: -18px;
+    background-image: url(../images/background-serach.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    padding: 20px;
+    min-height: 190px;
+    border-radius: 23px;
+} 
+
+.search i.arrow {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.search form div {
+    position: relative;
+}
+
+.search form div input {
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    border: 1px solid #AAA6B9;
+    border-radius: 12px;
+    padding-left: 30px;
+}
+
+.search form input::placeholder {
+    font-size: 14px;
+    color: #AAA6B9;
+}
+
+.search form div i {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    font-size: 11px;
+    color: #aaa6b9;
+}
+/* End Search */
+/* Start Keywords */
+.keywords {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5px 
+}
+
+.keywords img {
+    background-color: var(--secondary-background);
+    padding: 6px;
+    width: 33px;
+    border-radius: 5px;
+}
+
+.keywords .keyword {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: -27px;
+}
+
+.keywords .keyword span {
+    background-color: #cbc9d44f;
+    padding: 6px 15px;
+    font-size: 13px;
+    color: #524B6B;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 5px;
+}
+/* End Keywords */
+/* Start Jobs */
+.overflow-jobs {
+    height: 51.5%;
+    overflow: hidden;
+}
+
+.jobs {
+    
+}
+
+.jobs .job {
+    background-color: #eeeeee5e;
+    padding: 13px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.jobs .job .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobs .job .row-1 img {
+    width: 35px;
+}
+
+.jobs .job .row-1 i {
+    color: #524B6B;
+    font-size: 20px;
+}
+
+.jobs .job .row-2 {
+    margin-bottom: 15px;
+}
+
+.jobs .job .row-2 p {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #150A33;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.jobs .job .row-2 span {
+    color: #524B6B;
+    font-size: 14px;
+}
+
+.jobs .job .keywords {
+
+}
+
+.jobs .job .keywords span {
+    background-color: #cbc9d44f;
+    padding: 6px 15px;
+    font-size: 13px;
+    color: #524B6B;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 5px;
+}
+
+.jobs .job .row-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobs .job .row-3 span:first {
+    color: #AAA6B9;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.jobs .job .row-3 p {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.jobs .job .row-3 p span {
+    font-weight: 400;
+    color: #AAA6B9;
+    font-size: 12px;
+}
+/* End Jobs */
