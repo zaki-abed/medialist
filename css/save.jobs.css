@@ -1,0 +1,188 @@
+/* import File Master.css */
+@import url("master.css");
+
+/* Start Override master.css */
+.main-page {
+    position: relative;
+}
+
+.main-page .content {
+    justify-content: start;
+    margin-top: 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* position: relative; */
+}
+/* End Override master.css */
+
+/* Start header */
+.save-jobs header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.save-jobs header p {
+    color: #150B3D;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.save-jobs header span {
+    align-self: flex-end;
+    color: #D13F41;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* End header */
+
+/* Start header */
+.save-jobs .jobs {
+    
+}
+
+.save-jobs .jobs .job {
+    background-color: #eeeeee5e;
+    padding: 13px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.save-jobs .jobs .job .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-jobs .jobs .job .row-1 img {
+    width: 35px;
+}
+
+.save-jobs .jobs .job .row-1 i {
+    color: #524B6B;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-jobs .jobs .job .row-2 {
+    margin-bottom: 15px;
+}
+
+.save-jobs .jobs .job .row-2 p {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #150A33;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.save-jobs .jobs .job .row-2 span {
+    color: #524B6B;
+    font-size: 14px;
+}
+
+.save-jobs .jobs .job .keywords {
+
+}
+
+.save-jobs .jobs .job .keywords span {
+    background-color: #cbc9d44f;
+    padding: 6px 15px;
+    font-size: 13px;
+    color: #524B6B;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 5px;
+}
+
+.save-jobs .jobs .job .row-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.save-jobs .jobs .job .row-3 span:first {
+    color: #AAA6B9;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.save-jobs .jobs .job .row-3 p {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.save-jobs .jobs .job .row-3 p span {
+    font-weight: 400;
+    color: #AAA6B9;
+    font-size: 12px;
+}
+/* End Jobs */
+/* Start list */
+.save-jobs .list {
+    position: absolute;
+    bottom: 30px;
+    background: white;
+    width: 73%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+}
+
+.save-jobs .list div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px 15px;
+    border-radius: 8px;
+}
+
+.save-jobs .list div:hover {
+    background-color: #D13F41;
+    color: white !important;
+}
+
+.save-jobs .list i {
+    margin-right: 10px;
+}
+/* End list */
+/* Start Tab No Saving */
+.no-saving {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.no-saving p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #150B3D;
+}
+
+.no-saving span {
+    display: block;
+    text-align: center;
+    margin: 0px auto 40px;
+    color: #524B6B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.no-saving a {
+    background-color: var(--secondary-background);
+    color: white;
+    width: fit-content;
+    display: block;
+    margin-top: 100px;
+    padding: 15px 70px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+/* End Tab No Saving */

@@ -1,0 +1,411 @@
+/* import File Master.css */
+@import url("master.css");
+
+/* Start Override master.css */
+.main-page .content {
+    width: 82%;
+    justify-content: start;
+}
+/* End Override master.css */
+
+/* Start Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    justify-content: space-between;
+    min-height: 80px;
+    position: fixed;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.header .arrow,
+header .arrow {
+    color: #524B6B;
+    font-size: 14px;
+    margin-left: -30px;
+}
+
+.header .search-box {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header .search-box form {
+    flex: 1;
+}
+
+.header form div {
+    position: relative;
+}
+
+.header form input {
+    border: none;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+
+.header form input::placeholder {
+    font-size: 14px;    
+}
+
+.header form i {
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    font-size: 12px;
+    color: #524B6B;
+}
+
+.header .img-fillter {
+    background-color: var(--secondary-background);
+    padding: 4px;
+    border-radius: 7px;
+    width: 31px;
+}
+/* End Header */
+
+/* Start Specialize */
+.specialize {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.specialize p {
+    font-family: 'DM Sans', sans-serif;
+    color: #150A33;
+    font-weight: 700;
+}
+
+.specialize .container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(103px, 1fr));
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.specialize .container-grid div {
+    padding: 20px;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.specialize .container-grid div:hover {
+    background-color: var(--secondary-background);
+}
+
+.specialize .container-grid div:hover img {
+    background-color: white;
+}
+
+.specialize .container-grid div:hover p,
+.specialize .container-grid div:hover p span {
+    color: #FFFFFF;
+}
+.specialize .container-grid div img {
+    background-color: #ff922836;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.specialize .container-grid div p {
+    color: #150B3D;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+
+.specialize .container-grid div p span {
+    color: #AAA6B9;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* End Specialize */
+/* Start Tab Not Found */
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.not-found img {
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.not-found p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #150B3D;
+}
+
+.not-found span {
+    color: #524B6B;
+    font-size: 12px;
+}
+/* End Tab Not Found */
+
+/* Start Tab Filter */
+.filter {
+   display: none;
+}
+
+.filter header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter header .title {
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+.filter form .title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #150B3D;
+}
+
+/* Custom Styling Selection */
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select img {
+  position: absolute;
+  top: 43px;
+  right: 10px;
+  width: 11px;
+}
+
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #eee;
+  /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* End Custom Styling Selection */
+
+/* Start Styling Dual Input */
+
+.wrapper {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.wrapper .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper p.title {
+    margin: 0;
+}
+
+.wrapper span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #150B3D;
+}
+
+.wrapper span:last-of-type {
+    right: 0px;
+}
+
+.wrapper span::after {
+    content: "K";
+}
+
+.wrapper span::before {
+    content: "$";
+}
+.dual-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.slider-track {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: white;
+  border: 3px solid;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  pointer-events: auto;
+  border: none;
+}
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+
+/* End Styling Dual Input */
+
+/* Start Job Type */
+.filter form .line-gray{
+    width: 100%;
+    height: 1px;
+    background-color: #DEE1E7;    
+    margin: 20px 0 !important;
+}
+
+.filter form .jobs-type {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px 0 100px;
+}
+
+.filter form .jobs-type button {
+    background: #ffd6ad4f;
+    color: #524B6B;
+    padding: 6px 17px;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+/* Eed Job Type */
+
+.filter form .apply {
+    background: #D13F41;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    padding: 15px 0;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* End Tab Filter */

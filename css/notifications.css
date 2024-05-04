@@ -1,0 +1,311 @@
+/* import File Master.css */
+@import url("master.css");
+
+/* Start Override master.css */
+.main-page {
+    position: relative;
+}
+
+.main-page .content {
+    display: block !important;
+    margin-top: 20px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* display: none; */
+}
+/* End Override master.css */
+/* Start Header */
+.notifications {
+    
+}
+
+.notifications header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications header i {
+    color: #524B6B;
+    font-size: 15px;
+}
+
+.notifications header a {
+    color: var(--secondary-background);
+}
+
+.notifications .title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: #150B3D;
+}
+/* End Header */
+
+/* Start Notifications Container */
+.notifications .notifications-container {
+    
+}
+
+.notifications .notifications-container .box {
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.notifications .notifications-container .box:hover {
+    background-color: #7451ff41;
+}
+
+.notifications .notifications-container .row-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.notifications .notifications-container  .row-1 img{
+    width: 30px;
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.notifications .notifications-container .row-1 div {
+    padding: 0 10px;
+}
+
+.notifications .notifications-container .row-1 div p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #150B3D;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+}
+
+.notifications .notifications-container .row-1 div span {
+    font-size: 12px;
+    color: #524B6B;
+    opacity: 0.8;
+}
+
+.notifications .notifications-container .row-1 i {
+    color: #524B6B;
+}
+
+.notifications .notifications-container .row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications .notifications-container .row-2 a {
+    border: 1px solid #150B3D;
+    padding: 7px 16px;
+    font-size: 14px;
+    color: #150B3D;
+    border-radius: 8px;
+}
+
+.notifications .notifications-container .row-2 span {
+    color: #AAA6B9;
+    font-size: 11px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* End Notifications Container */
+/* Start Tab List */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2c373b99;
+    top: 0;
+    left: 0;
+    border-radius: 11px;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 23px;
+    opacity: 0.8;
+}
+
+.list {
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    padding: 10px 40px 10px;
+}
+
+.list div {
+    color: #3B4657 !important;
+    display: flex;
+    align-items: center;
+    row-gap: 19px;
+    padding: 8px 15px;
+    transition: 0.4s;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+}
+
+.list div:hover {
+    background-color: var(--secondary-background);
+    color: white !important;
+}
+
+.list i {
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.list p {
+    font-size: 14px;
+    flex: 1;
+}
+/* End Tab List */
+/* Start Tab Your Application */
+.application {
+    width: 90%;
+    margin-top: 40px;
+    display: none;
+} 
+
+.application i{
+    color: #524B6B;
+    font-size: 14px;
+}
+
+.application p {
+    color: #150B3D;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+
+.application p.title {
+    text-align: center;   
+}
+
+.application p.sub-title {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.application img {
+    width: 40px;
+    max-width: 100%;
+}
+
+.application span {
+    color: #150B3D;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.application ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.application ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #524B6B;
+}
+
+.application ul li::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    background: #B5B6B7;
+    border-radius: 50%;
+}
+
+.application .file {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #9d97b528;
+    border: 0.5px dashed #9d97b5;
+    border-radius: 8px;
+}
+
+.application .file img {
+    width: 40px;
+}
+
+.application .file div {
+    margin-left: 20px;
+}
+
+.application .file p.title-file {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.application .file span {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.application a {
+    background-color: var(--secondary-background);
+    margin: 30px auto 0;
+    display: block;
+    color: white;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 15px 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* End Tab Your Application */
+/* Start Tab No Notification */
+.no-notification {
+    display: none;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+i.icon-no-notifi {
+    display: none;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    color: #524B6B;
+}
+
+.no-notification .text p {
+    color: #150B3D;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.no-notification .text span {
+    display: block;
+    padding: 0 91px;
+    color: #524B6B;
+}
+
+.no-notification img {
+    margin-top: 100px;
+}
+
+/* End Tab No Notification */

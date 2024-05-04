@@ -117,6 +117,7 @@
 .jobs .job .row-1 i {
     color: #524B6B;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .jobs .job .row-2 {

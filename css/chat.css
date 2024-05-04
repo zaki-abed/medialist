@@ -1,0 +1,333 @@
+/* import File Master.css */
+@import url("master.css");
+
+/* Start Override master.css */
+.main-page {
+    overflow: hidden;
+}
+
+.main-page .content {
+    justify-content: flex-start;
+    margin-top: 35px;
+}
+/* End Override master.css */
+/* Start Header */
+.chat-page {
+    position: relative;
+}
+
+.chat-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chat-page header i {
+    color: #524B6B;
+    font-size: 15px;
+}
+/* End Header */
+/* Start Chat */
+.chat-page {
+    /* height: 100%; */
+}
+
+.chat-page .chat {
+    
+}
+
+.chat-page .chat .info {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.chat-page .chat .info img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.chat-page .chat .info .text{
+    flex: 1;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.chat-page .chat .info .text p {
+    color: #101828;
+    margin: 0;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.chat-page .chat .info .text span {
+    font-size: 12px;
+    display: block;
+    position: relative;
+    padding-left: 10px;
+}
+
+.chat-page .chat .info .text span::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4EC133;
+}
+
+.chat-page .chat .info .icons {
+    
+}
+
+.chat-page .chat .info .icons i {
+    color: #D13F41;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* Start Styling Messages */
+.chat-page .msg_history {
+    margin: 20px 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-height: 55%;
+} 
+
+.chat-page .msg_history  .outgoing_msg {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+} 
+
+.chat-page .msg_history .outgoing_msg .sent_msg {
+    position: relative;
+    width: 65%;
+} 
+
+/* Style File */
+.chat-page .msg_history .outgoing_msg .sent_msg .file {
+    border-radius: 13% 12% 25% 12% / 20% 24% 0% 21%;
+    background-color: var(--secondary-background);
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg .file .col-1 {
+
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg .file .col-2 {
+
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg .file .col-2 p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 3px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg .file .col-2 span {
+    color: #D0DBE0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    display: block;
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg .file .col-3 i {
+
+}
+
+.chat-page .msg_history .outgoing_msg .sent_msg p:not(.title-file) {
+    border-radius: 13% 12% 25% 12% / 20% 24% 0% 21%;
+    background-color: var(--secondary-background);
+    color: white;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 5px;
+} 
+
+.chat-page .msg_history .outgoing_msg .sent_msg .time_date {
+   color: #AAA6B9;
+   position: absolute;
+   right: 0;
+   font-size: 12px;
+   margin-right: 20px;
+   display: block;
+} 
+
+.chat-page .msg_history .outgoing_msg .sent_msg .time_date::after {
+    content: url(../images/double-check.svg);
+    position: absolute;
+    top: 0;
+    right: -18px;
+} 
+
+.chat-page .msg_history .incoming_msg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.chat-page .msg_history .incoming_msg .incoming_msg_img {
+}
+
+.chat-page .msg_history .incoming_msg .incoming_msg_img img {
+    width: 35px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.chat-page .msg_history .incoming_msg .received_msg {
+    position: relative;
+    width: 100%;
+}
+
+.chat-page .msg_history .incoming_msg .received_msg .received_withd_msg {
+    width: 65%;
+}
+
+.chat-page .msg_history .incoming_msg .received_msg .received_withd_msg p {
+    background-color: #ff922824;
+    padding: 15px;
+    border-radius: 13% 12% 12% 12% / 20% 24% 24% 0%;
+    margin: 0;
+    margin-bottom: 3px;
+    color: #524B6B;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+}
+
+.chat-page .msg_history .incoming_msg .received_msg .received_withd_msg span {
+    color: #AAA6B9;
+    position: absolute;
+    right: left;
+    font-size: 12px;
+    display: block;
+}
+/* End Styling Messages */
+/* Start Box Sending */
+.send-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.send-box .col-1,
+.send-box .col-2 {
+    
+}
+
+.send-box .col-1 {
+    position: relative;
+    width: 100%;
+}
+
+.send-box .col-1 input {
+    width: 100%;
+    border: none;
+    border: 1px solid #eee;
+    padding: 15px 10px;
+    padding-left: 40px;
+    border-radius: 8px;
+}
+
+.send-box .col-1 input::placeholder {
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    color: #AAA6B9;
+}
+
+.send-box .col-1 img {
+    position: absolute;
+    left: 9px;
+    top: 18px;
+    width: 22px;
+}
+
+.send-box .col-2 {
+    position: relative;
+}
+
+.send-box .col-2 input {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--secondary-background);
+    width: 50px;
+    height: 50px;
+}
+
+.send-box .col-2 img {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+/* End Box Sending */
+/* End Chat */
+
+/* Start Tab Call */
+.call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.call .row-1 {
+    
+}
+
+.call .row-1 img {
+    width: 156px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.call .row-1 p {
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #101828;
+    font-weight: 700;
+
+}
+
+.call .row-1 span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.call .row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #DADADA66;
+    padding: 20px 0;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -140%;
+}
+
+.call .row-2 i {
+
+}
+
+.call .row-2 i:last-of-type {
+    transform: rotate(223deg);
+}
+/* End Tab Call */
