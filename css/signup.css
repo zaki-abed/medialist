@@ -1,6 +1,10 @@
 /* import File Master.css */
 @import url("master.css");
 /* Start logo */
+.main-page {
+    height: auto;
+}
+
 .main-page .content .logo {
     width: 150px;
     max-width: 100%;
