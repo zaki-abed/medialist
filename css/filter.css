@@ -115,7 +115,7 @@ form .radio-content .box-container .checkmark:after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: var(--secondary-background);
+    background: var(--main-background);
 }
 /* End Styling Custom Radio */
 form .job-type .job-container, 
@@ -136,7 +136,7 @@ form .position-level .position-container div {
 
 form .job-type .job-container div.active,
 form .position-level .position-container div.active {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
 }
 
@@ -186,7 +186,7 @@ form .checkbox-content  .box-container :hover input ~ .checkmark {
 
 /* When the checkbox is checked, add a blue background */
 form .checkbox-content .box-container input:checked ~ .checkmark {
-    border: 2px solid var(--secondary-background);
+    border: 2px solid var(--main-background);
     border-radius: 4px;
 }
 
@@ -208,7 +208,7 @@ form .checkbox-content .box-container .checkmark:after {
     top: 2px;
     width: 3px;
     height: 8px;
-    border: solid var(--secondary-background);
+    border: solid var(--main-background);
     border-width: 0px 1px 1px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -230,14 +230,14 @@ form .checkbox-content .box-container .checkmark:after {
     font-size: 14px;
     font-weight: 700;
     font-family: 'Source Sans Pro', sans-serif;
-    color: var(--secondary-background);
+    color: var(--main-background);
     border: none;
     border-radius: 9px;
 }
 
 .filter form .menu-bar input[type=submit] {
     flex: 1;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
     border: none;
     padding: 13px;

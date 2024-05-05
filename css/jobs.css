@@ -64,7 +64,7 @@
 }
 
 .keywords img {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     padding: 6px;
     width: 33px;
     border-radius: 5px;

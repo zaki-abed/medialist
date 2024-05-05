@@ -32,7 +32,7 @@
 }
 
 .notifications header a {
-    color: var(--secondary-background);
+    color: var(--main-background);
 }
 
 .notifications .title {
@@ -157,7 +157,7 @@
 }
 
 .list div:hover {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white !important;
 }
 
@@ -263,7 +263,7 @@
 }
 
 .application a {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     margin: 30px auto 0;
     display: block;
     color: white;

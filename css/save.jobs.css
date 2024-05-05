@@ -174,7 +174,7 @@
 }
 
 .no-saving a {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
     width: fit-content;
     display: block;

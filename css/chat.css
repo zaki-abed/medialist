@@ -113,7 +113,7 @@
 /* Style File */
 .chat-page .msg_history .outgoing_msg .sent_msg .file {
     border-radius: 13% 12% 25% 12% / 20% 24% 0% 21%;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     padding: 10px;
     color: white;
     display: flex;
@@ -150,7 +150,7 @@
 
 .chat-page .msg_history .outgoing_msg .sent_msg p:not(.title-file) {
     border-radius: 13% 12% 25% 12% / 20% 24% 0% 21%;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
     font-size: 13px;
     padding: 15px;
@@ -265,7 +265,7 @@
 .send-box .col-2 input {
     border-radius: 15px;
     border: none;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     width: 50px;
     height: 50px;
 }

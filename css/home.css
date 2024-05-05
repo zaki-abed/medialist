@@ -24,7 +24,7 @@
 }
 
 .row-1 .setting i {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
     font-size: 13px;
     padding: 10px;
@@ -39,7 +39,7 @@
 
 /* Row 2 */
 .row-2 {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,11 +227,11 @@
 
 .nav i.home {
     color: white;
-    background: var(--secondary-background);
+    background: var(--main-background);
     padding: 10px;
     border-radius: 50%;
 }
 
 .nav i.active {
-    color: var(--secondary-background);
+    color: var(--main-background);
 }

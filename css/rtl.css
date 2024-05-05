@@ -1,0 +1,11 @@
+/* Start Global Rules */
+body {
+    direction: rtl;
+}
+/* End Global Rules */
+/* Start Index.html */
+.index .form form .password i {
+    left: 15px;
+    right: auto;
+}
+/* End Index.html */

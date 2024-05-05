@@ -90,7 +90,7 @@ body {
 
 .content .tabs-btn button:first-child {
     color: white;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     border: none;
     font-size: 14px;
     padding: 10px 30px;
@@ -189,7 +189,7 @@ body {
     width: 90%;
     display: block;
     margin: 0 auto;
-    background: var(--secondary-background);
+    background: var(--main-background);
     border: none;
     color: white;
     padding: 13px 0;

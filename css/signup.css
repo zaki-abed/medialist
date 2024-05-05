@@ -116,15 +116,15 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: var(--secondary-background);
+    background: var(--main-background);
 }
 
 .form form input[type=submit] {
     text-align: center;
     margin: 0 auto 20px;
     padding: 15px 55px;
-    background-color: var(--secondary-background);
-    border: 1px solid var(--secondary-background);
+    background-color: var(--main-background);
+    border: 1px solid var(--main-background);
     border-radius: 0px 15px 0px 15px;
     color: white;
     font-size: 18px;
@@ -132,7 +132,7 @@
 }
 
 .form p.sign-up {
-    color: var(--secondary-background);
+    color: var(--main-background);
     font-size: 15px;
     font-weight: 700;
     margin: 0;
@@ -169,7 +169,7 @@
 
 .row-2 .social i {
     font-size: 20px;
-    border: 1px solid var(--secondary-background);
+    border: 1px solid var(--main-background);
     width: 40px;
     border-radius: 50%;
     height: 40px;

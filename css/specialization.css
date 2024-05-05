@@ -63,7 +63,7 @@ header .arrow {
 }
 
 .header .img-fillter {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     padding: 4px;
     border-radius: 7px;
     width: 31px;
@@ -99,7 +99,7 @@ header .arrow {
 }
 
 .specialize .container-grid div:hover {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
 }
 
 .specialize .container-grid div:hover img {

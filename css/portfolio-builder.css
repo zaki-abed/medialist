@@ -21,7 +21,7 @@
     left: 1px;
     width: 100%;
     height: 2px;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
 }
 
 /* Profile Images */
@@ -97,7 +97,7 @@
 
 .tab-1 .profile-images .row-2 button {
     font-size: 15px;
-    border: 1px solid var(--secondary-background);
+    border: 1px solid var(--main-background);
     padding: 10px;
 }
 
@@ -142,19 +142,19 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 2px solid var(--secondary-background);
+    border: 2px solid var(--main-background);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .paginate span.active {
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
 }
 
 .paginate i {
-    color: var(--secondary-background);
+    color: var(--main-background);
 }
 
 .next,
@@ -162,7 +162,7 @@
     margin: 20px auto;
     display: block;
     font-family: "Quicksand", sans-serif;
-    background-color: var(--secondary-background);
+    background-color: var(--main-background);
     color: white;
     border: none;
     border-radius: 25px;
@@ -238,7 +238,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: var(--secondary-background);
+    background: var(--main-background);
 }
 
 .tab-2 input[type=text] {
