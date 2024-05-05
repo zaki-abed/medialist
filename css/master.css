@@ -23,7 +23,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     flex-wrap: wrap;
     background-color: #eee;
     font-family: "Source Sans 3", sans-serif;
@@ -42,7 +41,6 @@ a {
 /* Start Components */
 .main-page {
     width: 430px;
-    height: 100vh;
     padding: 10px;
     background-color: white;
     display: flex;
