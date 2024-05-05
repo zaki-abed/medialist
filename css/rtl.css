@@ -9,3 +9,21 @@ body {
     right: auto;
 }
 /* End Index.html */
+/* Start signup.html */
+.sign-up .box-container {
+    padding-right: 35px;
+}
+
+.sign-up .checkmark {
+    right: 0;
+    left: auto;
+}
+
+.sign-up .form form .radio-box div:nth-of-type(3) label {
+    margin-right: 0;
+}
+
+.sign-up .row-2 .social{
+    column-gap: 10px;
+}
+/* End signup.html */
