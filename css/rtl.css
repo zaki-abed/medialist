@@ -10,11 +10,13 @@ body {
 }
 /* End Index.html */
 /* Start signup.html */
-.sign-up .box-container {
+.sign-up .box-container,
+.portfolio-builder  .box-container {
     padding-right: 35px;
 }
 
-.sign-up .checkmark {
+.sign-up .checkmark,
+.portfolio-builder .checkmark {
     right: 0;
     left: auto;
 }

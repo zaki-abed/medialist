@@ -38,6 +38,7 @@
 .tab-2 .title {
     font-weight: 700;
     font-size: 18px;
+    margin-top: 25px;
 }
 
 .tab-1 .profile-images .background-gray {
@@ -113,15 +114,15 @@
 .tab-1 .box-basic-details p {
     font-size: 18px;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 30px 0 20px;
 }
 
 .tab-1 .box-basic-details form input {
     border: none;
-    border-bottom: 1px solid #737373;
+    border-bottom: 1px solid #7373737a;
     width: 100%;
     margin-bottom: 30px;
+    padding: 10px 0;
 }
 
 .tab-1 .box-basic-details form input::placeholder {
@@ -185,7 +186,7 @@
 .tab-2 div p {
     color: #737373;
     font-size: 15px;
-    margin: 0;
+    margin: 15px 0;
 }
 
 .tab-2 .radio-content {
@@ -208,7 +209,7 @@
     cursor: pointer;
 }
 
-.checkmark {
+.portfolio-builder .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -267,5 +268,4 @@
 .tab-2 label:last-of-type {
     color: #737373;
     display: block;
-    margin-bottom: 15px;
 }
