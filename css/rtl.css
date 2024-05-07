@@ -29,3 +29,13 @@ body {
     column-gap: 10px;
 }
 /* End signup.html */
+/* Start Page Home.html */
+.home .row-2 img{
+    left: 0;
+    right: auto;
+}
+
+.home .row-4 .box .row-1 div {
+    margin-right: 10px;
+}
+/* End Page Home.html */

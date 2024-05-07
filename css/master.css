@@ -592,3 +592,207 @@ a {
 ===============================================================
 */
 
+
+/*
+=========================================================================
+=============== Start Styling Page forget-password.html =================
+=========================================================================
+*/
+
+.forget-password h1 {
+    text-align: center;
+    color: #0D0140;
+}
+
+.forget-password p {
+    color: #524B6B;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.forget-password img {
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.forget-password form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.forget-password form label {
+    color: #150B3D;
+    font-weight: 700;
+}
+
+.forget-password form input[type=email] {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 18px 15px;
+}
+
+.forget-password form input[type=email]::placeholder {
+    font-size: 14px;
+    color: #0D014099;
+}
+
+.forget-password form input[type=submit] {
+    font-family: "Source Code Pro", monospace;
+    background-color: var(--main-background);
+    color: white;
+    border: none;
+    padding: 14px 0;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.forget-password a {
+    text-align: center;
+    background-color: #FFB6B680;
+    color: white;
+    padding: 15px 0;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 7px;
+}
+
+/*
+=======================================================================
+=============== End Styling Page forget-password.html =================
+=======================================================================
+*/
+
+/*
+=======================================================================
+=============== Start Styling Page check-email.html =================
+=======================================================================
+*/
+
+.check-email h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #0D0140;
+}
+
+.check-email p {
+    color: #524B6B;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.check-email img {
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 30px auto 100px;
+}
+
+.check-email a:not(:last-of-type) {
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    padding: 15px 0;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.check-email .open-email {
+    background-color: var(--main-background);
+}
+
+.check-email .back-login {  
+    background-color: #FFB6B680;
+}
+
+.check-email .resend {
+    color: #150B3D;
+    font-family: "Source Sans Pro", sans-serif;
+    display: block;
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.check-email .resend span {
+    color: var(--main-background);
+    text-decoration: underline;
+}
+
+/*
+=======================================================================
+=============== End Styling Page check-email.html =================
+=======================================================================
+*/
+
+/*
+=======================================================================
+=============== Start Styling Page update-password-email.html =================
+=======================================================================
+*/
+.update-password h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #0D0140;
+}
+
+.update-password p {
+    color: #524B6B;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.update-password img {
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 30px auto 100px;
+}
+
+.update-password a {
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    padding: 15px 0;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.update-password .continue {
+    background-color: var(--main-background);
+}
+
+.update-password .back-login {  
+    background-color: #FFB6B680;
+}
+
+
+/*
+=======================================================================
+=============== End Styling Page update-password.html =================
+=======================================================================
+*/
