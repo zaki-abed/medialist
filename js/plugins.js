@@ -1,17 +1,8 @@
-// // Function Loader
-// $(window).on('load', function() {
-//     $(".overlay").fadeOut(1000, function(){
-//         $("body").css("overflow", "auto");
-//         $(this).remove();
-//     });
-// });
-
-// // Index Page :: Make Animation
-
-// setTimeout(function() {
-//     var img = document.getElementById("name");
-//     img.setAttribute("src", "images/khaled-yousef-white.svg");
-// }, 1440); 
+//  Index Page :: Make Animation
+    // setTimeout(function() {
+    //     var img = document.getElementById("name");
+    //     img.setAttribute("src", "images/khaled-yousef-white.svg");
+    // }, 1440); 
 
 // document.getElementById("showPasswordButton").addEventListener("click", function() {
 //     var passwordInput = document.getElementById("passwordInput");
@@ -22,11 +13,10 @@
 //     }
 // });
 
-// Profile.html
-// Accordion Function
-
 $(document).ready(function() {
 
+    // Profile.html
+    // Accordion Function
     // Add click event listener to accordion buttons
     $('.accordion').click(function() {
         var row2 = $(this).closest('.box').find('.row-2');
@@ -37,7 +27,7 @@ $(document).ready(function() {
         }
     });
 
-//     // Function Tab: About As
+    // Function Tab: About As
     // to hide profile page then show about as tab
     $(".show-edit-about").click(function(){
         $(".profile").fadeOut(500); 
@@ -118,3 +108,13 @@ $(document).ready(function() {
     });
     
 });
+
+// Function Loader
+$(window).on('load', function() {
+    $(".overlay").fadeOut(1000, function(){
+        $("body").css("overflow", "auto");
+        $(this).remove();
+    });
+});
+
+
