@@ -10,16 +10,18 @@
 }
 
 .main-page .content .fill-background {
+    position: absolute;
+    top: 46%;
     left: 47%;
-    border-radius: 50%;
     width: 1px;
     height: 1px;
-    background: var(--main-background);
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--main-background);
+    border-radius: 50%;
     transform: scale(0);
+    
     animation-timing-function: linear;
     animation-name: fill-background;
     animation-duration: 2s;
@@ -35,18 +37,21 @@
         transform: scale(2000);
     }
     100% {
-        top: 150px;
+        top: 100px;
         transform: scale(0);
     }
 }
 
 .main-page .content .logo {
-    position: relative;
+    position: absolute;
     z-index: 1;
     width: 150px;
     top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin: 0 auto;
+    
     animation-name: move-logo;
     animation-duration: 1s;
     animation-delay: 2s;
@@ -68,6 +73,7 @@
 }
 /* Start form */
 .login {
+    margin-top: 150px;
     opacity: 0;
     animation-name: fadein-login;
     animation-duration: 1s;
