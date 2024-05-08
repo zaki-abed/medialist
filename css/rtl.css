@@ -43,10 +43,11 @@ margin-right: 10px;
 /* Start Page details.html */
 .details .tab-desc ul li::after {
     right: -10px;
-    left: 0;
+    left: auto;
 }
 
 .details .tab-desc ul li {
-    margin-left: 5px;
+    margin-right: 15px;
+    margin-left: auto;
 }
 /* End Page details.html */
