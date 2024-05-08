@@ -2,18 +2,7 @@
 @import url("master.css");
 
 /* Start Override master.css */
-body {
-    overflow: hidden;
-}
 
-.main-page {
-    overflow: hidden;
-}
-
-.main-page .content {
-    justify-content: start;
-    overflow: hidden;
-}
 /* End Override master.css */
 /* Start Component */
 .line-gray {
@@ -24,8 +13,7 @@ body {
 /* End Component */
 /* Start Header */
 .overflow-scroll {
-    height: 100%;
-    overflow-y: scroll;
+    
 }
 
 .filter {
@@ -141,6 +129,122 @@ form .position-level .position-container div.active {
 }
 
 /* Start Custom Styling Checkbox */
+
+/* Start Styling Dual Input */
+
+.wrapper {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.wrapper .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper p.title {
+    margin: 0;
+}
+
+.wrapper span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #150B3D;
+}
+
+.wrapper span:last-of-type {
+    right: 0px;
+}
+
+.wrapper span::after {
+    content: "K";
+}
+
+.wrapper span::before {
+    content: "$";
+}
+.dual-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.slider-track {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: white;
+  border: 3px solid;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  pointer-events: auto;
+  border: none;
+}
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+
+/* End Styling Dual Input */
 
 /* Customize the label (the container) */
 form .checkbox-content .box-container {

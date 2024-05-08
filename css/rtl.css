@@ -98,4 +98,52 @@ margin-right: 10px;
     top: 30px;
 }
 
+.specialization .custom-select img{
+    left: 10px;
+    right: auto;
+}
+
+.specialization .wrapper,
+.filter .wrapper {
+    direction: ltr;
+}
+
+.specialization .wrapper p.title,
+.filter .wrapper p.title,
+.specialization .row-1,
+.filter .row-1 {
+    direction: rtl;
+}  
 /* End Page specialization.html */
+/* Start Page filter.html */
+.filter header {
+    position: relative;
+}
+
+.filter header .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filter form .radio-content .box-container {
+    padding-right: 35px;
+}
+
+.filter form .radio-content .box-container .checkmark {
+    right: 0;
+    left: auto;
+}
+
+.filter form .checkbox-content .box-container {
+    padding-right: 25px;
+
+}
+
+.filter form .checkbox-content .box-container .checkmark {
+    right: 0;
+    left: auto;
+}
+
+
+/* End Page filter.html */
