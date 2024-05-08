@@ -143,6 +143,50 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- Job -->
+                        <div class="job">
+                            <div class="row-1">
+                                <img src="images/google-logo.svg" alt="Logo">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <a href="details.html">
+                                <div class="row-2">
+                                    <p>UI/UX Designer</p>
+                                    <span>Google inc . California, USA</span>
+                                </div>
+                                <div class="keywords">
+                                    <span>Senior designer</span>
+                                    <span>Designer</span>
+                                    <span>Full-time</span>
+                                </div>
+                                <div class="row-3">
+                                    <span>25 minute ago</span>
+                                    <p>$15K <span>/Mo</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Job -->
+                        <div class="job">
+                            <div class="row-1">
+                                <img src="images/google-logo.svg" alt="Logo">
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            <a href="details.html">
+                                <div class="row-2">
+                                    <p>UI/UX Designer</p>
+                                    <span>Google inc . California, USA</span>
+                                </div>
+                                <div class="keywords">
+                                    <span>Senior designer</span>
+                                    <span>Designer</span>
+                                    <span>Full-time</span>
+                                </div>
+                                <div class="row-3">
+                                    <span>25 minute ago</span>
+                                    <p>$15K <span>/Mo</span></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="nav">
@@ -164,12 +208,15 @@
     <script src="js/jquery.nicescroll.min.js"></script>
 <script>
     $(function() {  
-        $(".keyword-scroll");
-    $(".keyword-scroll").niceScroll({
-        railpadding: { top: 0, right: 0, left: 0, bottom: -10 },
-        cursorwidth: "5px"
-    }).resize();
-});
+        $(".keyword-scroll").niceScroll({
+            railpadding: { top: 0, right: 0, left: 0, bottom: -10 }
+        });
+    });
+
+    $(function() {  
+        $(".overflow-jobs").niceScroll();
+    });
+    
 </script>
 </body>
 </html>

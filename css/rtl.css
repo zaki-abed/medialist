@@ -50,6 +50,10 @@ margin-right: 10px;
     margin-right: 15px;
     margin-left: auto;
 }
+
+.main-page .head .details-co::before{
+    right: 102px;
+}
 /* End Page details.html */
 
 /* Start Page jobs.html */

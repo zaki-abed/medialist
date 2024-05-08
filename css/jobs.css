@@ -2,6 +2,7 @@
 @import url("master.css");
 .main-page .content {
     width: 90%;
+    
 }
 
 /* Start Search */
@@ -93,12 +94,14 @@
 /* End Keywords */
 /* Start Jobs */
 .overflow-jobs {
-    height: 51.5%;
+    /* height: 51.5%; */
+    height: 500px;
     overflow: hidden;
 }
 
 .jobs {
-    
+    /* height: 500px; */
+    /* overflow: hidden; */
 }
 
 .jobs .job {

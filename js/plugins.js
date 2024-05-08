@@ -107,10 +107,18 @@ $(document).ready(function() {
     $("#btn_desc").click(function() {
        $("#tab_desc").fadeIn(500); 
        $("#tab_company").fadeOut(500); 
+       $("#tab_apply").fadeOut(500); 
     });
 
     $("#btn_company").click(function() {
         $("#tab_company").fadeIn(500); 
         $("#tab_desc").fadeOut(500); 
-     });
+        $("#tab_apply").fadeOut(500); 
+    });
+
+    $("#btn_apply").click(function() {
+        $("#tab_apply").fadeIn(500); 
+        $("#tab_company").fadeOut(500); 
+        $("#tab_desc").fadeOut(500); 
+    });
 });
