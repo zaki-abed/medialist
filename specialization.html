@@ -7,18 +7,22 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Styling Css -->
     <link rel="stylesheet" href="css/specialization.css">
+    <!-- RTL Css -->
+    <link rel="stylesheet" href="css/rtl.css">
+
 </head>
 <body>
     <div class="main-page">
         <div class="content">
+            <div class="specialization">
             <!-- Header -->
             <div class="header" id="header">
-                <i class="fas fa-arrow-left arrow"></i>
+                <i class="fa-duotone fa-arrow-left arrow"></i>
                 <div class="search-box">
-                    <form action="#">
+                    <form action="filter.html">
                         <div>
                             <input type="text" placeholder="Design">
                             <i class="fas fa-search"></i>
@@ -60,7 +64,7 @@
             <!-- Tab Filter -->
             <div class="filter" id="filter">
                 <header>
-                    <i class="fas fa-arrow-left arrow" id="backToSpec"></i>
+                    <i class="fa-duotone fa-arrow-left arrow" id="backToSpec"></i>
                     <p class="title">Filter</p>
                 </header>
                 <form action="#">
@@ -124,6 +128,7 @@
                 <img src="images/not-found.svg" alt="Not Found">
                 <p>No results found</p>
                 <span>The search could not be found, please check spelling or write another word.</span>
+            </div>
             </div>
         </div>
     </div>

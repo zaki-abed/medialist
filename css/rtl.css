@@ -76,3 +76,26 @@ margin-right: 10px;
     direction: ltr;
 }
 /* End Page jobs.html */
+
+/* Start Page specialization.html */
+.specialization header {
+    position: relative;
+}
+
+.specialization .header {
+    margin-top: 50px;
+}
+
+.specialization header .arrow,
+.specialization .header .arrow {
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.specialization .header .arrow {
+    left: 33px;
+    top: 30px;
+}
+
+/* End Page specialization.html */
