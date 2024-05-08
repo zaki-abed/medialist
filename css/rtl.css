@@ -39,3 +39,14 @@ body {
     margin-right: 10px;
 }
 /* End Page Home.html */
+
+/* Start Page details.html */
+.details .tab-desc ul li::after {
+    right: -10px;
+    left: 0;
+}
+
+.details .tab-desc ul li {
+    margin-left: 5px;
+}
+/* End Page Home.html */
