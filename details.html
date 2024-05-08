@@ -7,9 +7,12 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Styling Css -->
     <link rel="stylesheet" href="css/details.css">
+    <!-- RTL Css -->
+    <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+    
     </style>
 </head>
 <body>
@@ -28,7 +31,6 @@
                 <button id="btn_desc">Description</button>
                 <button id="btn_company">Company</button>
             </div>
-            <div class="overflow-details">
                 <!-- Tab Description -->
                 <div class="tab-desc" id="tab_desc">
                     <p class="title">Job Description</p>
@@ -155,35 +157,11 @@
                     </form>
                 </div>
                 <input type="submit" class="apply-btn" value="Apply Now" id="btn_apply">
-            </div>
         </div> <!-- / end content -->
     </div> <!-- / end main-page -->
-    <script>
-        const tab_desc = document.getElementById('tab_desc');
-        const tab_company = document.getElementById('tab_company');
-        const tab_apply = document.getElementById('tab_apply');
-
-        const btn_desc = document.getElementById('btn_desc');
-        const btn_company = document.getElementById('btn_company');
-        const btn_apply = document.getElementById('btn_apply');
-
-        btn_desc.addEventListener('click', function() {
-                tab_desc.style.display = 'block';
-                tab_company.style.display = 'none';
-                tab_apply.style.display = 'none';
-        });
-
-        btn_company.addEventListener('click', function() {
-                tab_desc.style.display = 'none';
-                tab_company.style.display = 'block';
-                tab_apply.style.display = 'none';
-        });
-
-        btn_apply.addEventListener('click', function() {
-                tab_desc.style.display = 'none';
-                tab_company.style.display = 'none';
-                tab_apply.style.display = 'block';
-        });
-    </script>
+    <!-- JQ -->
+    <script src="js/jquery.js"></script>
+    <!-- plugins.js -->
+    <script src="js/plugins.js"></script>
 </body>
 </html>

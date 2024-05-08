@@ -1,12 +1,12 @@
 //  Index Page :: Make Animation
-document.getElementById("showPasswordButton").addEventListener("click", function() {
-    var passwordInput = document.getElementById("passwordInput");
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-    } else {
-        passwordInput.type = "password";
-    }
-});
+// document.getElementById("showPasswordButton").addEventListener("click", function() {
+//     var passwordInput = document.getElementById("passwordInput");
+//     if (passwordInput.type === "password") {
+//         passwordInput.type = "text";
+//     } else {
+//         passwordInput.type = "password";
+//     }
+// });
 
 $(document).ready(function() {
 
@@ -102,4 +102,15 @@ $(document).ready(function() {
         $(".profile").fadeIn(500); 
     });
     
+
+    // Details.html Functions:
+    $("#btn_desc").click(function() {
+       $("#tab_desc").fadeIn(500); 
+       $("#tab_company").fadeOut(500); 
+    });
+
+    $("#btn_company").click(function() {
+        $("#tab_company").fadeIn(500); 
+        $("#tab_desc").fadeOut(500); 
+     });
 });

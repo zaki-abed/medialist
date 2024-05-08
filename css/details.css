@@ -1,22 +1,8 @@
 /* import File Master.css */
 @import url("master.css");
 /* Start Override master.css */
-body {
-    overflow: hidden;
-}
-
-.main-page {
-    overflow: hidden;
-}
-
 .main-page .content {
-    overflow: hidden;
     margin-top: 131px;
-    width: 94%;
-}
-.overflow-details {
-    height: 100%;
-    overflow-y: scroll;
 }
 /* End Override master.css */
 /* Start Component */
@@ -38,8 +24,8 @@ body {
 
 .main-page .head {
     position: absolute;
-    top: 95px;
-    width: 77%;
+    top: 70px;
+    width: 100%;
     background-color: #F3F2F2;
     padding: 10px;
     text-align: center;
