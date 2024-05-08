@@ -7,7 +7,6 @@
 /* Start Search */
 .search {
     width: 100%;
-    margin-left: -18px;
     background-image: url(../images/background-serach.svg);
     background-repeat: no-repeat;
     background-size: cover;
