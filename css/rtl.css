@@ -51,3 +51,24 @@ margin-right: 10px;
     margin-left: auto;
 }
 /* End Page details.html */
+
+/* Start Page jobs.html */
+.jobs .search {
+    position: relative;
+    padding-top: 70px;
+} 
+
+.jobs .search i.arrow {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+.jobs .keywords .keyword span:first-of-type {
+    margin-right: 10px;
+}
+
+.jobs .keywords {
+    direction: ltr;
+}
+/* End Page jobs.html */

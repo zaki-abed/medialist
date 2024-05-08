@@ -7,9 +7,12 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/jobs.css">
+    <!-- RTL Css -->
+    <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+
     <style>
         /* Nav */
         .nav {
@@ -44,7 +47,7 @@
 <body>
     <div class="main-page">
         <div class="content">
-            <div>
+            <div class="jobs">
                 <!-- Search -->
                 <div class="search">
                     <i class="fas fa-arrow-left arrow"></i>
@@ -62,7 +65,10 @@
                 <!-- Keywords -->
                 <div class="keywords">
                     <img src="images/filter-icon.svg" alt="Filter Icon">
-                    <div class="keyword">
+                    <div class="keyword keyword-scroll">
+                        <span>Senior designer</span>
+                        <span>Designer</span>
+                        <span>Full-time</span>
                         <span>Senior designer</span>
                         <span>Designer</span>
                         <span>Full-time</span>
@@ -149,5 +155,21 @@
             </div>
         </div><!-- / content -->
     </div> <!-- / main page -->
+
+    <!-- JQ -->
+    <script src="js/jquery.js"></script>
+    <!-- plugins.js -->
+    <script src="js/plugins.js"></script>
+    <!-- NiceScroll library -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+<script>
+    $(function() {  
+        $(".keyword-scroll");
+    $(".keyword-scroll").niceScroll({
+        railpadding: { top: 0, right: 0, left: 0, bottom: -10 },
+        cursorwidth: "5px"
+    }).resize();
+});
+</script>
 </body>
 </html>

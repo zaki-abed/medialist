@@ -6,7 +6,7 @@
 
 /* Start Search */
 .search {
-    width: 110%;
+    width: 100%;
     margin-left: -18px;
     background-image: url(../images/background-serach.svg);
     background-repeat: no-repeat;
@@ -60,7 +60,8 @@
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 5px 
+    margin-bottom: 5px;
+    width: 98%;
 }
 
 .keywords img {
@@ -75,7 +76,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: -27px;
+    column-gap: 12px;
+}
+
+.keywords .keyword span:first-of-type {
+    margin-left: 10px;
 }
 
 .keywords .keyword span {
@@ -154,6 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 12.5px;
 }
 
 .jobs .job .row-3 span:first {
