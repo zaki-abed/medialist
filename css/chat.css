@@ -2,10 +2,6 @@
 @import url("master.css");
 
 /* Start Override master.css */
-.main-page {
-    overflow: hidden;
-}
-
 .main-page .content {
     justify-content: flex-start;
     margin-top: 35px;
@@ -328,6 +324,6 @@
 }
 
 .call .row-2 i:last-of-type {
-    transform: rotate(223deg);
+    transform: rotate(137deg);
 }
 /* End Tab Call */

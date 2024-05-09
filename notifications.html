@@ -7,9 +7,11 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Styling Css -->
     <link rel="stylesheet" href="css/notifications.css">
+    <!-- Style RTL -->
+    <link rel="stylesheet" href="css/rtl.css">
 </head>
 <body>
     <div class="main-page">
@@ -205,6 +207,7 @@
             <img src="images/no-notification.svg" alt="No Notification">
         </div>
     </div><!-- / main-page -->
+    
     <script>
 
         // Get all elements with the class name "showList"
@@ -229,6 +232,13 @@
             list.style.display = 'none';
             overlay.style.display = 'none';
         });
+
+        // $(document).ready(function() {
+        //     $(".btn-add-post-job").click(function() {
+        //         $(".overlay").fadeIn(500); 
+        //         $(".tab-add-post-job").fadeIn(500); 
+        //     });
+        // });
         </script>
 </body>
 </html>

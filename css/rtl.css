@@ -242,3 +242,44 @@ margin-right: 10px;
     left: auto;
 }
 /* End specialization.html */ 
+/* Start notifications.html */
+ .list i {
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+.notifications header {
+    flex-direction: row-reverse;
+}
+
+.application i {
+    display: none;
+}
+
+.application ul li {
+    padding-right: 15px;
+}
+
+.application ul li::after {
+    right: 3px;
+}
+
+/* End notifications.html */
+/* Start Chat */
+.chat-page .msg_history .outgoing_msg {
+    justify-content: flex-start;
+}
+
+.chat-page .msg_history .incoming_msg {
+    justify-content: flex-end;
+}
+
+.chat-page .msg_history .incoming_msg {
+    flex-direction: row-reverse;
+}
+
+.chat-page .msg_history .incoming_msg .received_msg {
+    display: flex;
+    justify-content: flex-end;
+}
+/* End Chat */

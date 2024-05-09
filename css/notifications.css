@@ -3,13 +3,12 @@
 
 /* Start Override master.css */
 .main-page {
-    position: relative;
+    height: 750px;
 }
 
 .main-page .content {
     display: block !important;
     margin-top: 20px;
-    height: 100%;
     overflow: hidden;
     overflow-y: scroll;
     /* display: none; */
@@ -175,7 +174,7 @@
 .application {
     width: 90%;
     margin-top: 40px;
-    display: none;
+    /* display: none; */
 } 
 
 .application i{
