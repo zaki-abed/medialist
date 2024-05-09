@@ -7,9 +7,12 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Styling Css -->
-    <link rel="stylesheet" href="css/save.jobs.css">
+    <link rel="stylesheet" href="css/save-jobs.css">
+    <!-- RTL Css -->
+    <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+
 </head>
 <body>
     <div class="main-page">
@@ -209,22 +212,16 @@
             </div>
         </div> <!-- / content -->
     </div> <!-- / main-page -->
-
+    <!-- JQ -->
+    <script src="js/jquery.js"></script>
+    <!-- plugins.js -->
+    <script src="js/plugins.js"></script>
+    <!-- NiceScroll library -->
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script>
-    // Get all elements with the class name "showList"
-    const showList = document.querySelectorAll(".showList");
-    const list = document.getElementById("list");
-
-    // Add click event listener to each "showList" element using forEach
-    showList.forEach(function(item) {
-        item.addEventListener('click', function() {
-            if (list.style.display == 'none') {
-                list.style.display = 'block';
-            } else {
-                list.style.display = 'none';
-            }
-        });
+    $(function() {  
+        $(".jobs").niceScroll();
     });
-    </script>
+</script>
 </body>
 </html>

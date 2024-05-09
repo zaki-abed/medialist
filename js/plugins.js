@@ -121,4 +121,11 @@ $(document).ready(function() {
         $("#tab_company").fadeOut(500); 
         $("#tab_desc").fadeOut(500); 
     });
+
+    
+    // save-jobs.html
+
+    $(".showList").click(function() {
+        $("#list").fadeToggle(500); 
+    });
 });

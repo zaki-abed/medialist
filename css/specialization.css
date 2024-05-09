@@ -4,66 +4,130 @@
 /* Start Override master.css */
 
 /* End Override master.css */
-
+/* Start Overlay */
+.overlay{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #2c373b87;
+  position: absolute;
+  z-index: 1;
+}
+/* End Overlay */
 /* Start Header */
-.header {
-  margin-top: 30px;
+
+header {
+  width: 100%;
+  background-image: url(../images/background-serach.svg);
+  background-repeat: no-repeat;
+  background-size: 124%;
+  padding: 20px;
+  border-radius: 23px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+} 
+
+header .info {
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
 }
 
-.header .arrow,
-header .arrow {
-    color: #524B6B;
-    font-size: 14px;
-    margin-bottom: 20px;
+header .info p {
+  flex: 1;
+  font-size: 15px;
 }
 
-.header .search-box {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    width: 100%;
+header .info .alert {
+  position: relative;
 }
 
-.header .search-box form {
-    flex: 1;
+header .info .alert i {
+  font-size: 19px;
 }
 
-.header form div {
-    position: relative;
+header .info .alert span {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  background: red;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
 }
 
-.header form input {
-    border: none;
-    width: 100%;
-    border: 1px solid #eee;
-    padding: 10px;
-    padding-left: 25px;
-    border-radius: 10px;
+
+header .info img {
+  width: 40px;
+  border-radius: 50%;
 }
 
-.header form input::placeholder {
-    font-size: 14px;    
+header form {
+  
 }
 
-.header form i {
-    position: absolute;
-    top: 16px;
-    left: 9px;
-    font-size: 12px;
-    color: #524B6B;
+header form h2 {
+  padding-right: 127px;
 }
 
-.header .img-fillter {
-    background-color: var(--main-background);
-    padding: 4px;
-    border-radius: 7px;
-    width: 31px;
+header form div {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 12px;
+}
+
+header form input[type=search] {
+  display: block;
+  width: 100%;
+  padding: 13px 0 13px 35px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+header form input::placeholder {
+  color: #A0A7B1;
+  font-size: 14px;
+}
+
+header form input[type=submit] {
+  background-color: transparent;
+  background-image: url(../images/filter-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 33px;
+  border: none;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header form input[type=submit]:hover {
+  opacity: 0.5;
+}
+
+
+header form i {
+  color: #A0A7B1;
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  font-size: 14px;
+}
+
+header form img {
+  
 }
 /* End Header */
-
 /* Start Specialize */
 .specialize {
     margin-top: 20px;
@@ -71,11 +135,31 @@ header .arrow {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    position: relative;
 }
-.specialize p {
+
+.specialize .row-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+      color: gray;
+}
+.specialize .row-1 p {
     font-family: 'DM Sans', sans-serif;
     color: #150A33;
     font-weight: 700;
+    flex: 1;
+}
+
+.specialize .row-1 a.view-all {
+  color: #eee;
+  font-size: 13px;
+  transition: 0.6s;
+  color: gray;
+}
+
+.specialize .row-1 a.view-all:hover {
+  opacity: 0.5;
 }
 
 .specialize .container-grid {
@@ -121,6 +205,56 @@ header .arrow {
     color: #AAA6B9;
     font-size: 13px;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.specialize .btn-add-post-job {
+  background: var(--main-background);
+  color: #fff;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.specialize .tab-add-post-job {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  z-index: 2;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.specialize .tab-add-post-job p {
+  color: #150B3D;
+  font-weight: 700;
+}
+
+.specialize .tab-add-post-job span {
+  display: block;
+  color: #524B6B;
+  margin-bottom: 20px;
+}
+
+.specialize .tab-add-post-job a {
+  background-color: #D13F41;
+  display: block;
+  color: #fff;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px 0;
+  font-weight: 700;
+  border-radius: 8px;
+
+}
+
+.specialize .tab-add-post-job a:last-of-type {
+  background: #FFB6B680;
 }
 /* End Specialize */
 /* Start Tab Not Found */
@@ -403,3 +537,522 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 /* End Tab Filter */
+
+/* Start Tab: Add Post */
+
+.add-post i,
+#content6 i {
+    display: block;
+    margin: 15px 0;
+    color: #524B6B;
+}
+
+.add-post form,
+#content6 form {
+    position: relative;
+    margin-top: 40px;
+}
+
+.add-post form p,
+#content6 form p {
+    font-weight: 700;
+    color: #150B3D;
+}
+
+.add-post form .info,
+#content6 form .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+
+.add-post form .info img,
+#content6 form .info img {
+  width: 40px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.add-post form .info p,
+#content6 form .info p {
+    margin: 0;
+    margin-bottom: 3.5px;
+}
+
+.add-post form .info span,
+#content6 form .info span {
+    font-size: 14px;
+    color: #524B6B;
+    font-family: 'DM Sans';
+}
+
+.add-post form label,
+#content6 form label {
+    display: block;
+    margin: 40px 0 10px 0;
+    font-weight: 700;
+    color: #150B3D;
+}
+
+
+.add-post form input[type=text]:first-of-type {
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    border-radius: 8px;
+}
+
+.add-post form textarea,
+#content6 form textarea {
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    padding: 15px 0 10px 15px;
+    border-radius: 8px;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+.add-post form input[type=text]::placeholder,
+.add-post form textarea::placeholder,
+#content6 form textarea::placeholder {
+    font-size: 14px;
+}
+
+.add-post form .footer-form, 
+#content6 form .footer-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.add-post form .footer-form p,
+#content6 form .footer-form p {
+    color: var(--main-background);
+
+}
+
+.add-post form .footer-form,
+#content6 form .footer-form {
+    color: var(--main-background);
+
+}
+
+.add-post form input[type=submit], 
+#content6 form input[type=submit] {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    border: none;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--main-background);
+    font-weight: 700;
+    font-size: 18px;
+}
+/* End Tab: Add Post */
+
+/* Start Tab: Add Job */
+
+.add-job  .fa-xmark,
+.edit-job  .fa-xmark {
+    margin: 15px 0;
+}
+
+.add-job .info-boxes,
+.edit-job .info-boxes {
+    margin-top: 40px;
+}
+
+.add-job .info-boxes .tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.add-job .info-boxes .tab .title-box,
+.edit-job .info-boxes .tab .title-box {
+    color: #150B3D;
+    font-weight: 700;
+}
+
+.add-job .info-boxes .tab .fa-plus,
+.edit-job .info-boxes .tab i {
+    background: #FFD6AD;
+    color: #D13F41;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+}
+/* End Tab: Add Job */
+
+/* Start Tab Edit Jobs */
+.edit-job .info-boxes .tab {
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.edit-job .info-boxes .tab div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-job .info-boxes .tab span {
+    color: #524B6B;
+    font-size: 14px;
+}
+/* End Tab Edit Jobs */
+
+/* Start Add Tabs */
+.tab-content {
+    display: none;
+}
+/* Tab 1 */
+#content1 {
+
+}
+
+#content1 .fa-arrow-left,
+#content3 .fa-arrow-left {
+    margin: 15px 0;
+}
+
+#content1 p,
+#content3 p {
+    color: #150B3D;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#content1 form,
+#content3 form {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#content1 form input[type=search],
+#content3 form input[type=search] {
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px 0 10px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#content1 form input[type=search]::placeholder,
+#content3 form input[type=search]::placeholder {
+    color: #AAA6B9;
+    font-size: 15px;
+}
+
+#content1 form i.fa-xmark,
+#content3 form i.fa-xmark {
+    position: absolute;
+    top: 14px;
+    right: 11px;
+}
+
+#content1 form i.fa-magnifying-glass,
+#content3 form i.fa-magnifying-glass {
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    color: #AAA6B9;
+    font-size: 13px;
+}
+
+#content1 .rasult-search,
+#content3 .rasult-search {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#content1 .rasult-search span,
+#content3 .rasult-search span {
+    display: block;
+    color: #524B6B;
+}
+/* End Tab 1*/
+/* Start Tab 2 */
+#content2,
+#content5 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    padding: 20px;
+}
+
+#content2 p,
+#content5 p {
+    color: #150B3D;
+    text-align: center;
+    font-weight: 700;
+}
+
+#content2 span.sub-title,
+#content5 span.sub-title {
+    display: block;
+    font-size: 14px;
+    color: #524B6B;
+    margin-bottom: 25px;
+    text-align: center
+}
+
+/* Start Styling Custom Radio */
+#content2,
+#content5 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+#content2 form,
+#content5 form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+
+#content2 form .title,
+#content5 form .title {
+    color: #150B3D;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 40px;
+}
+
+#content2 form .radio-content,
+#content5 form .radio-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#content2 form .radio-content .box-container,
+#content5 form .radio-content .box-container {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+#content2 form .radio-content .box-container span:first-of-type,
+#content5 form .radio-content .box-container span:first-of-type {
+    font-weight: 700;
+}
+
+#content2 form .radio-content .box-container .sub-title,
+#content5 form .radio-content .box-container .sub-title {
+    text-align: left;
+}
+
+#content2 form .radio-content .box-container input,
+#content5 form .radio-content .box-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#content2 form .radio-content .box-container .checkmark,
+#content5 form .radio-content .box-container .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid #737373;
+}
+
+#content2 form .box-container:hover input ~ .checkmark,
+#content5 form .box-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+#content2 form .radio-content .box-container .checkmark:after,
+#content5 form .radio-content .box-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#content2 form .radio-content .box-container input:checked ~ .checkmark:after,
+#content5 form .radio-content .box-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+#content2 form .radio-content .box-container .checkmark:after,
+#content5 form .radio-content .box-container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--main-background);
+}
+/* End Styling Custom Radio */
+
+/* End Tab 4 */
+#content4 {
+
+}
+
+#content4 .fa-arrow-left {
+    margin: 15px 0;
+}
+
+#content4 p {
+    color: #150B3D;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#content4 form {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#content4 form input[type=search] {
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px 0 10px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#content4 form input[type=search]::placeholder {
+    color: #AAA6B9;
+    font-size: 15px;
+}
+
+#content4 form i.fa-xmark {
+    position: absolute;
+    top: 14px;
+    right: 11px;
+}
+
+#content4 form i.fa-magnifying-glass {
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    color: #AAA6B9;
+    font-size: 13px;
+}
+
+#content4 .rasult-search {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+#content4 .rasult-search > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+#content4 .rasult-search img{
+    width: 40px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#content4 .rasult-search .col-2 p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#content4 .rasult-search .col-2 span{
+    display: block;
+    color: #524B6B;
+    font-size: 14px;
+}
+
+/* End Tab 4 */
+
+/* Start Tab 6 */
+#content6 form .info {
+    margin: 0;
+}
+
+#content6 form textarea {
+    margin-bottom: 0;
+}
+
+.job-desc {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px 0;
+}
+
+.job-desc img {
+    width: 40px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.job-desc .col-2 {
+
+}
+
+.job-desc .col-2 p {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.job-desc .col-2 span {
+    display: block;
+    font-size: 14px;
+    color: #524B6B;
+    margin-bottom: 5px;
+}
+
+.job-desc .col-2 a {
+    margin-top: 20px;
+    border-radius: 7px;
+    display: block;
+    color: #0D0140;
+    border: 1px solid #0D0140;
+    padding: 10px;
+    font-size: 14px;
+    width: fit-content;
+}
+#content6 .footer-form i {
+    color: var(--main-background);
+}
+
+#content6 .footer-form i:last-of-type {
+    flex: 1;
+}
+/* End Tab 6 */

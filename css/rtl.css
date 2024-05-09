@@ -147,3 +147,98 @@ margin-right: 10px;
 
 
 /* End Page filter.html */
+
+/* Start Page save-job.html */
+.save-jobs .list i {
+    margin-left: 10px;
+}
+/* End Page save-job.html */
+/* Start specialization.html */
+.specialization header form h2 {
+    padding-right: 0;
+    padding-left: 127px;
+}
+
+.specialization header form h2 {
+    padding-right: 0;
+    padding-left: 127px;
+}
+
+.specialization header form input[type=search] {
+    padding: 13px 35px 13px 0;
+
+}
+
+.specialization header form i {
+    right: 13px;
+}
+
+.specialization .add-post i.fa-arrow-left {
+    text-align: left;
+}
+
+.specialization .add-post form input[type=text]:first-of-type {
+    padding: 15px 15px 15px 0;
+}
+
+.specialization .add-post form textarea, 
+.specialization #content6 form textarea {
+    padding: 15px 15px 15px 0;
+}
+
+.specialization  .fa-image,
+.specialization  .fa-camera {
+    color: var(--main-background);
+}
+
+.specialization  .fa-camera {
+    flex: 1;
+}
+ 
+.specialization .add-job .fa-xmark,
+.specialization .edit-job .fa-xmark {
+    display: block;
+    text-align: left;
+}
+
+.specialization .close-btn {
+    display: block;
+    text-align: left;
+}
+
+.specialization #content1 form input[type=search], 
+.specialization #content3 form input[type=search] {
+    padding: 10px 30px 10px 0;
+}
+
+.specialization #content1 form i.fa-xmark,
+.specialization #content3 form i.fa-xmark {
+    left: 10px;
+    right: auto;
+}
+
+.specialization #content1 form i.fa-magnifying-glass, 
+.specialization #content3 form i.fa-magnifying-glass {
+    right: 11px;
+    left: auto;
+}
+
+.specialization #content2, 
+.specialization #content5 {
+    direction: ltr;
+}
+
+.specialization #content4 form i.fa-xmark {
+    right: auto;
+    left: 11px;
+}
+
+.specialization #content4 form input[type=search] {
+    padding: 10px 30px 10px 0;
+}
+
+.specialization #content4 form i.fa-magnifying-glass {
+    right: 11px;
+    left: auto;
+}
+/* End specialization.html */ 

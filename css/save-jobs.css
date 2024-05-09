@@ -2,25 +2,19 @@
 @import url("master.css");
 
 /* Start Override master.css */
-.main-page {
-    position: relative;
-}
-
-.main-page .content {
-    justify-content: start;
-    margin-top: 30px;
-    overflow: hidden;
-    overflow-y: scroll;
-    /* position: relative; */
-}
 /* End Override master.css */
 
 /* Start header */
+.save-jobs {
+    position: relative;
+}
+
 .save-jobs header {
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
+    margin-top: 25px;
 }
 
 .save-jobs header p {
@@ -40,7 +34,9 @@
 
 /* Start header */
 .save-jobs .jobs {
-    
+    height: 740px;
+    overflow: hidden;
+
 }
 
 .save-jobs .jobs .job {
@@ -84,7 +80,9 @@
 }
 
 .save-jobs .jobs .job .keywords {
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .save-jobs .jobs .job .keywords span {
@@ -123,9 +121,9 @@
 /* Start list */
 .save-jobs .list {
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     background: white;
-    width: 73%;
+    width: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
 }
 

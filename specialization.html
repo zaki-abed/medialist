@@ -11,29 +11,40 @@
     <!-- Styling Css -->
     <link rel="stylesheet" href="css/specialization.css">
     <!-- RTL Css -->
-    <!-- <link rel="stylesheet" href="css/rtl.css"> -->
+    <link rel="stylesheet" href="css/rtl.css">
 
 </head>
 <body>
+    
     <div class="main-page">
+        <div class="overlay"></div>
         <div class="content">
             <div class="specialization">
             <!-- Header -->
-            <div class="header" id="header">
-                <i class="fa-duotone fa-arrow-left arrow"></i>
-                <div class="search-box">
-                    <form action="filter.html">
-                        <div>
-                            <input type="text" placeholder="Design">
-                            <i class="fas fa-search"></i>
-                        </div>
-                    </form>
-                    <img id="filter_btn" src="images/filter-icon.svg" class="img-fillter" alt="Filter Icon">
+            <header>
+               <div class="info">
+                <p>Hi, Youssef Ahmed</p>
+                <div class="alert">
+                    <i class="fa-light fa-bell"></i>
+                    <span>1</span>
                 </div>
-            </div>
-            <!-- Specialization -->
+                <img src="images/person-1.jpg" alt="Person">
+               </div>
+               <form action="filter.html">
+                <h2>Find your dream job here!</h2>
+                <div>
+                    <input type="search" placeholder="Search">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                    <input type="submit" value="">
+                </div>
+               </form>
+            </header>
             <div class="specialize" id="specialize">
-                <p>Specialization</p>
+                <div class="row-1">
+                    <p>Specialization</p>
+                    <a href="#" class="view-all">View ALl</a>
+                </div>
+
                 <div class="container-grid">
                     <div>
                         <img src="images/icon-1.svg" alt="Icon">
@@ -60,6 +71,318 @@
                         <p>Design, <br> <span>140 Jobs</span></p>
                     </div>
                 </div>
+                <!-- Tab: Add Post OR Job -->
+                <div>
+                    <i class="fa-light fa-plus btn-add-post-job"></i>
+                    <div class="tab-add-post-job">
+                        <p>What would you like to add?</p>
+                        <span>Would you like to post your tips and experiences or create a job?</span>
+                        <a href="#" class="btn-post">Post</a>
+                        <a href="#" class="btn-job">Make a job</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab: Add Post -->
+            <div class="add-post" style="display: none;">
+                <i class="fa-light fa-arrow-left" id="back_to_home"></i>
+                <form action="#">
+                    <input type="submit" value="post">
+                    <p>Add Post</p>
+                    <div class="info">
+                        <div>
+                            <img src="images/person-1.jpg" alt="Person">
+                        </div>
+                        <div>
+                            <p>Youssef Ahmed</p>
+                            <span>California, USA</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="post-title">Post Title</label>
+                        <input type="text" id="post-title" placeholder="Write the title of your post here">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="What do you want to talk about?"></textarea>
+                    </div>
+                    <div class="footer-form">
+                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-solid fa-camera"></i>
+
+                        <p>Add Hashtag</p>
+                    </div>
+                </form>
+            </div>
+            <!-- Tab: Edit Job -->
+            <div class="edit-job" style="display: none;">
+                <i class="fa-regular fa-xmark"></i>
+                <div class="info-boxes">
+                    <!-- Box -->
+                    <div class="tab" data-tab="7">
+                        <div>
+                            <p class="title-box">Job position*</p>
+                            <i class="fa-light fa-pen-to-square"></i>
+                        </div>
+                        <span>dsassss</span>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="7">
+                        <div>
+                            <p class="title-box">Job position*</p>
+                            <i class="fa-light fa-pen-to-square"></i>
+                        </div>
+                        <span>dsassss</span>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="7">
+                        <div>
+                            <p class="title-box">Job position*</p>
+                            <i class="fa-light fa-pen-to-square"></i>
+                        </div>
+                        <span>dsassss</span>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="7">
+                        <div>
+                            <p class="title-box">Job position*</p>
+                            <i class="fa-light fa-pen-to-square"></i>
+                        </div>
+                        <span>dsassss</span>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="7">
+                        <div>
+                            <p class="title-box">Job position*</p>
+                            <i class="fa-light fa-pen-to-square"></i>
+                        </div>
+                        <span>dsassss</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Tab: Add Job -->
+            <div class="add-job" style="display: none;">
+                <i class="fa-regular fa-xmark back_to_home"></i>
+                <div class="info-boxes">
+                    <!-- Box -->
+                    <div class="tab" data-tab="1">
+                        <p class="title-box">Job position*</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="2">
+                        <p class="title-box">Type of workplace</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="3">
+                        <p class="title-box">Job location</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="4">
+                        <p class="title-box">Company</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="5">
+                        <p class="title-box">Employment type</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                    <!-- Box -->
+                    <div class="tab" data-tab="6">
+                        <p class="title-box">Description</p>
+                        <i class="fa-light fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tab Content: 1 -->
+            <div class="tab-content" id="content1">
+                <i class="fa-regular fa-arrow-left close-btn"></i>
+                <p>Job position</p>
+                <form action="#">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-regular fa-xmark"></i>
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </form>
+                <div class="rasult-search">
+                    <span>Assistant</span>
+                    <span>Associate</span>
+                    <span>Administrative Assistant</span>
+                    <span>Account Manager</span>
+                    <span>Assistant Manager</span>
+                    <span>Commission Sales Associate</span>
+                    <span>sales Attendant</span>
+                    <span>Account Manager</span>
+                    <span>Assistant Manager</span>
+                    <span>Commission Sales Associate</span>
+                    <span>sales Attendant</span>
+
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-content" id="content2">
+                <p>Choose the type of workplace</p>
+                <span class="sub-title">Decide and choose the type of place to work according to what you want</span>
+                <form action="#">
+                    <div class="radio-content">
+                        <label class="box-container">
+                            <span>On-site</span>
+                            <span class="sub-title">Employees come to work</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Hybrid</span>
+                            <span class="sub-title">Employees work directly on site or off site</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Remote</span>
+                            <span class="sub-title">Employees working off site</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-content" id="content3">
+                <i class="fa-regular fa-arrow-left close-btn"></i>
+                <p>Location</p>
+                <form action="#">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-regular fa-xmark"></i>
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </form>
+                <div class="rasult-search">
+                    <span>Califon, United States</span>
+                    <span>Associate</span>
+                    <span>California City, United States</span>
+                </div>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="tab-content" id="content4">
+                <i class="fa-regular fa-arrow-left close-btn"></i>
+                <p>Company</p>
+                <form action="#">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-regular fa-xmark"></i>
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </form>
+                <div class="rasult-search">
+                    <!-- Row -->
+                    <div>
+                        <img src="images/google-logo.svg" alt="Google Icon">
+                        <div class="col-2">
+                            <p>Google</p>
+                            <span>Company . Internet</span>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    <div>
+                        <img src="images/google-logo.svg" alt="Google Icon">
+                        <div class="col-2">
+                            <p>Google</p>
+                            <span>Company . Internet</span>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    <div>
+                        <img src="images/google-logo.svg" alt="Google Icon">
+                        <div  class="col-2">
+                            <p>Google</p>
+                            <span>Company . Internet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab 5 -->
+            <div class="tab-content" id="content5">
+                <p>Choose Job Type</p>
+                <span class="sub-title">Determine and choose the type of work according to what you want</span>
+                <form action="#">
+                    <div class="radio-content">
+                        <label class="box-container">
+                            <span>Full time</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Part time</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Contract</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                
+                        <label class="box-container">
+                            <span>Temporary</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Volunteer</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="box-container">
+                            <span>Apprenticeship</span>
+                            <input type="radio" name="last-update" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                
+                    </div>
+                </form>
+            </div>
+            <!-- Tab 6 -->
+            <div class="tab-content" id="content6">
+                <i class="fa-light fa-arrow-left close-btn"></i>
+                <form action="#">
+                    <input type="submit" value="post">
+                    <p>Shared a Job</p>
+                    <div class="info">
+                        <div>
+                            <img src="images/person-1.jpg" alt="Person">
+                        </div>
+                        <div>
+                            <p>Youssef Ahmed</p>
+                            <span>California, USA</span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="What do you want to talk about?">
+Hey guys
+
+Today I am opening a job vacancy in the field of UI/UX Designer at an Apple company To see a job description, please see below.
+                        </textarea>
+                        <div class="job-desc">
+                            <img src="images/google-logo.svg" alt="Google Logo">
+                            <div class="col-2">
+                                <p>UI/UX Designer</p>
+                                <span>Job vacancies from Apple company</span>
+                                <span>California, USA . On-site</span>
+                                <a href="#">Application details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <p>Add Hashtag</p>
+                    </div>
+                </form>
             </div>
             <!-- Tab Filter -->
             <div class="filter" id="filter">
@@ -133,7 +456,7 @@
         </div>
     </div>
     <!-- Custom Styling Selection -->
-    <script>
+    <!-- <script>
         // Custom Selection
         var x, i, j, l, ll, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -213,10 +536,10 @@
         /*if the user clicks anywhere outside the select box,
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
-    </script>
+    </script> -->
 
     <!-- Custom Styling Dual -->
-    <script>
+    <!-- <script>
         window.onload = function () {
         slideOne();
         slideTwo();
@@ -258,17 +581,93 @@
     const filter_btn = document.getElementById("filter_btn");
     const filter = document.getElementById("filter");
 
-    filter_btn.addEventListener('click', function() {
-        specialize.style.display = 'none'; 
-        header.style.display = 'none'; 
-        filter.style.display = 'block';
-    });
+    // filter_btn.addEventListener('click', function() {
+    //     specialize.style.display = 'none'; 
+    //     header.style.display = 'none'; 
+    //     filter.style.display = 'block';
+    // });
 
-    backToSpec.addEventListener('click', function() {
-        specialize.style.display = 'flex'; 
-        header.style.display = 'block'; 
-        filter.style.display = 'none';
-    });
+    // backToSpec.addEventListener('click', function() {
+    //     specialize.style.display = 'flex'; 
+    //     header.style.display = 'block'; 
+    //     filter.style.display = 'none';
+    // });
+    </script> -->
+    <!-- JQ -->
+    <script src="js/jquery.js"></script>
+    <!-- plugins.js -->
+    <script src="js/plugins.js"></script>
+    <script>
+        $(".btn-add-post-job").click(function() {
+            $(".overlay").fadeIn(500); 
+            $(".tab-add-post-job").fadeIn(500); 
+        });
+        
+        $(".overlay").click(function() {
+            $(".overlay").fadeOut(500); 
+            $("#content2").fadeOut(500); 
+            $("#content5").fadeOut(500); 
+            $(".tab-add-post-job").fadeOut(500); 
+        });
+
+        $(".btn-post").click(function() {
+            $(".overlay").fadeOut(500); 
+            $(".tab-add-post-job").fadeOut(500); 
+            $("#specialize").fadeOut(500); 
+            $("header").fadeOut(500); 
+            $(".add-post").fadeIn(500); 
+
+        });
+
+        $("#back_to_home").click(function() {
+            $(".add-post").fadeOut(500); 
+            $("#specialize").fadeIn(500); 
+            $("header").fadeIn(500); 
+        });
+
+        $(".btn-job").click(function() {
+            $(".overlay").fadeOut(500); 
+            $(".tab-add-post-job").fadeOut(500); 
+            $("#specialize").fadeOut(500); 
+            $("header").fadeOut(500); 
+            $(".add-job").fadeIn(500); 
+        });
+
+        $(".back_to_home").click(function() {
+            $("#specialize").fadeIn(500); 
+            $("header").fadeIn(500); 
+            $(".add-job").fadeOut(500); 
+        });
+
+        $(document).ready(function(){
+            $(".tab").click(function(){
+                var tabId = $(this).data('tab');
+
+                if (tabId == 2 || tabId == 5) {
+                    $(".overlay").fadeIn();
+                     $("#content" + tabId).fadeIn();
+                }else {
+                    $(".add-job").fadeOut(500);
+                    $(".tab-content").fadeOut(500);
+                    $("#content" + tabId).fadeIn(500);
+                } 
+
+                // Get the data-tab attribute value of the clicked div
+                
+
+                
+                               
+            });
+
+
+            $(".close-btn").click(function(){
+                // Show h1
+                $(".add-job").fadeIn(500);
+                // Hide the tab content
+                $(this).parent().fadeOut();
+            });
+
+        });
     </script>
 </body>
 </html>
