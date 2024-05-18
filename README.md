@@ -17,18 +17,18 @@ Feel free to explore the code and contribute to the project!
 ## Screenshots
 **Login Page**
 
-![Screenshot 1](image/demo/login.png)
+![Screenshot 1](images/demo/login.png)
 
 **Home Page**
 
-![Screenshot 1](image/demo/home.png)
+![Screenshot 1](images/demo/home.png)
 
 
 **Profile Page**
 
-![Screenshot 1](image/demo/profile.png)
+![Screenshot 1](images/demo/profile.png)
 
 
 **Specialization Page**
 
-![Screenshot 1](image/demo/specialization.png)
+![Screenshot 1](images/demo/specialization.png)
